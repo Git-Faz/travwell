@@ -1,83 +1,158 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-  }
-
 body {
     height: 100vh;
     width: 100vw;
+    margin: 0;
     overflow: hidden;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), 
-              url("wp.jpg") no-repeat center center/cover;
-    background-blend-mode: darken;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('wp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Verdana, sans-serif;
 }
 
-.menu{
-    padding: 10px 25px;
-    display: flex;
-    justify-content: space-between;
+.container {
+    margin: 0 auto;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+}
+
+.nav-content {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
     color: white;
+    padding: 0 1.5rem;
 }
 
-#brandName{
-    padding: 5px;
+#brandName h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
+
 #links {
-    max-width: 80%;
-    width: fit-content;
-    padding: 5px;
     display: flex;
-    gap: 50px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-.menu #links a{
-    color:white;
+
+#links a {
+    padding: 0.25rem 1.5rem;
+    color: white;
     text-decoration: none;
 }
 
-#search{
-    max-width: fit-content;
-    max-height: fit-content;
+#links a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #search {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 0px; /* Space between elements */
+    width: 100%;
 }
 
-input#searchBar {
-    padding: 5px;
-    height: 35px;
-    width: 250px;
+#searchBar {
+    padding: 0.5rem;
+    height: 2rem;
+    width: 80%;
     border: none;
-    border-radius: 5px 0px 0px 5px;
-    background-color: rgb(243, 243, 243);
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+    background-color: #e5e7eb;
 }
-input#searchBar:active{
-    background-color: white;
-    color: black;
-    border: none;
-    
+
+#searchBar:focus {
+    outline: 1px solid;
+    background-color: black;
+    color: white;
 }
-#searchBtn, #clearBtn {
-    width: 35px;
-    height: 35px;
-    padding: 5px 0px;
-    background: rgb(243, 243, 243);
-    cursor: pointer;
-    display: flex;;
+
+#searchBtn {
+    width: 2.25rem;
+    height: 2rem;
+    background-color: #e5e7eb;
+    display: flex;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: 1.125rem;
     border: none;
+    cursor: pointer;
 }
-#searchBtn{
-    border-radius: 0px;
+
+#searchBtn:hover {
+    background-color: black;
 }
-#clearBtn{
-    border-radius: 0px 5px 5px 0px;
+
+#clearBtn {
+    width: 2.25rem;
+    height: 2rem;
+    color: black;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
 }
+
+#clearBtn:hover {
+    background-color: black;
+    color: white;
+    outline: 1px solid white;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 80px 0 80px;
+    width: fit-content;
+}
+
+#intro-title {
+    grid-column: 1;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro-title h1 {
+    margin: 0px;
+    font-size: 3.75rem;
+    color: white;
+    line-height: 1.375;
+    font-weight: 600;
+}
+
+#intro-content {
+    margin: 5px;
+    padding: 10px;
+    grid-column: 2;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}
+
+#intro-content p{
+    padding: 10px;
+    color: white;
+    line-height: 30px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    nav {
+        width: 100vw;
+    }
+}
+
