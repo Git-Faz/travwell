@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>About Us</title>
 </head>
+
 <body>
     <div class="container">
-    <nav>
-        <div class="nav-content">
-            <div id="brandName">
-                <h1>Trawell</h1>
+        <nav>
+            <div class="nav-content">
+                <div id="brandName">
+                    <h1>Trawell</h1>
+                </div>
+                <div id="links">
+                    <a href="/travel_recommendation.html">Home Page</a>
+                    <a href="/about_us.html">About Us</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div id="search">
+                    <input type="search" name="searchBar" id="searchBar" placeholder="search">
+                    <button type="submit" id="searchBtn">🔎</button>
+                    <button onclick="clearSearch()" id="clearBtn"><strong>X</strong></button>
+                </div>
             </div>
-            <div id="links">
-                <a href="/travel_recommendation.html">Home Page</a>
-                <a href="/about_us.html">About Us</a>
-                <a href="#">Contact Us</a>
+        </nav>
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
+        <div class="content">
+            <div class="description" id="aboutus">
+                <p><span class="subheading">Welcome to <strong>Trawvell</strong>,</span><br>Your go-to travel companion
+                    for discovering the best destinations, experiences, and hidden gems around the world. We make travel
+                    planning effortless by providing personalized recommendations, expert insights, and essential tips
+                    to help you create unforgettable journeys. Whether you're a solo explorer, a family traveler, or an
+                    adventure seeker, Trawvell ensures that every trip is fun, safe, and hassle-free. Let us guide you
+                    to your next great adventure!</p>
             </div>
-            <div id="search">
-                <input type="search" name="searchBar" id="searchBar" placeholder="search">
-                <button type="submit" id="searchBtn">🔎</button>
-                <button onclick="clearSearch()" id="clearBtn"><strong>X</strong></button>
+            <div class="description" id="teaminfo">
+                <span class="subheading">
+                    <h2>Our Team</h2>
+                </span>
+                <div id="employees">
+                    <div class="card">
+                        <img src="emp.jpg" alt="employee">
+                        <h5>Jack Reacher</h5>
+                        <p>CEO of Trawvell.<br>Also manages VIP travels</p>
+                    </div>
+                    <div class="card">
+                        <img src="emp.jpg" alt="employee">
+                        <h5>Emma Watt</h5>
+                        <p>Travel Director.<br>Coordinates all the travels</p>
+                    </div>
+                    <div class="card">
+                        <img src="emp.jpg" alt="employee">
+                        <h5>Brian Cole</h5>
+                        <p>Security Manager.<br>In charge of safety & security</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <div></div>
     </div>
 </body>
+
 </html>
