@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Travwell</title>
-
+    <title>Contact Us</title>
 </head>
 
 <body>
@@ -29,17 +29,19 @@
         </nav>
         <div class="content">
             <div class="big-title">
-                <h1 id="intro-title">Fun, Safe &<br>Convinient<br>Travelling</h1>
+                <h1 >Contact Us</h1>
             </div>
-            <div class="description" id="intro-content">
-                <p><span class="subheading">Welcome to <strong>Trvawell!</strong></span><br>
-                    Experience fun, safe, and convenient travel like never before!
-                     Whether you're planning a weekend getaway or a long adventure, 
-                     we ensure hassle-free bookings, secure rides, and enjoyable journeys. 
-                     Travel with confidence, comfort, and ease—your perfect trip starts here!</p>
-                <button class="btn" id="bookBtn">Book Now!</button>
+            <div id="contact-form">
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" id="submitBtn">Submit</button>
+                </form>
             </div>
         </div>
     </div>
 </body>
-</html>
