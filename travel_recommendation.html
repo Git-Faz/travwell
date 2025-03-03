@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="travel_recommendation.js" defer></script>
     <title>Travwell</title>
 
 </head>
@@ -21,23 +22,25 @@
                     <a href="/contact_us.html">Contact Us</a>
                 </div>
                 <div id="search">
-                    <input type="search" name="searchBar" id="searchBar" placeholder="search">
+                    <input type="search" id="searchBar" placeholder="search">
                     <button type="submit" id="searchBtn">🔎</button>
-                    <button onclick="clearSearch()" id="clearBtn"><strong>X</strong></button>
+                    <button id="clearBtn"><strong>X</strong></button>
                 </div>
             </div>
         </nav>
         <div class="content">
             <div class="big-title">
                 <h1 id="intro-title">Fun, Safe &<br>Convinient<br>Travelling</h1>
-            </div>
-            <div class="description" id="intro-content">
-                <p><span class="subheading">Welcome to <strong>Trvawell!</strong></span><br>
+                <p><!-- <span class="subheading">Welcome to <strong>Trvawell!</strong></span><br> -->
                     Experience fun, safe, and convenient travel like never before!
                      Whether you're planning a weekend getaway or a long adventure, 
                      we ensure hassle-free bookings, secure rides, and enjoyable journeys. 
                      Travel with confidence, comfort, and ease—your perfect trip starts here!</p>
-                <button class="btn" id="bookBtn">Book Now!</button>
+            </div>
+            <div class="description" id="intro-content">
+                <div id="results">
+
+                </div>
             </div>
         </div>
     </div>
